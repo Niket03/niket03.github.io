@@ -10,12 +10,33 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/about.css">
   </head>
-  <body>
+  <script language = "javascript" type="text/javascript">
+            var arr = new Array("N-Logo.png", "Ni-Logo.png","Nik-Logo.png","logo.png");
+            var i = 1;
+            var ref;
+        
+            function picLibary()
+            {
+                document.images[0].src = arr[i];
+                i++;
+                if(i>3)
+                    i = 0;
+            }
+            function start()
+            {
+                ref = setInterval("picLibary()",1000);
+            }
+            function stop()
+            {
+                clearInterval(ref);
+            }
+    </script>
+  <body onload="start()">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <a href="index.htm">
-            <img src="images/logo.png" class="img-fluid rounded float-left title-logo" alt="Responsive image" width="320" height="320"></a>
+            <img src="N-logo.png", name = "img1", onmouseover="stop()" alt="Responsive image" width="320" height="320" class="img-fluid rounded float-left title-logo" /></a>
         </div>
         <div class="col-md-6 text-right text-uppercase">
           <h1 class="title-super text-thin">Niket C.Patil</h1>
