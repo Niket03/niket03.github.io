@@ -13,6 +13,8 @@ body{
 }
 .title-logo{
   margin-top: 10px;
+  width: 270px;
+  height: 201px;
 }
 .title-super{
   font-size: 60px;
