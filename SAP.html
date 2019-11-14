@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,inital-scale=1">
+    <title>Profile WebSite</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300&amp;subset=latin-ext" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:600" rel="stylesheet">  
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/se.css">
+  </head>
+  <script language = "javascript" type="text/javascript">
+            var arr = new Array("N-Logo.png", "Ni-Logo.png","Nik-Logo.png","logo.png");
+            var i = 1;
+            var ref;
+        
+            function picLibary()
+            {
+                document.images[0].src = arr[i];
+                i++;
+                if(i>3)
+                    i = 0;
+            }
+            function start()
+            {
+                ref = setInterval("picLibary()",1000);
+            }
+            function stop()
+            {
+                clearInterval(ref);
+            }
+    </script>
+  <body onload="start()">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="index.htm">
+            <img src="N-logo.png", name = "img1", onmouseover="stop()" alt="Responsive image" width="320" height="320" class="img-fluid rounded float-left title-logo" /></a>
+        </div>
+        <div class="col-md-6 text-right text-uppercase">
+          <h1 class="title-super text-thin">Niket C.Patil</h1>
+          <h4>SAP Basis Consulant</h4>
+          <h4>System Administrator</h4>
+        </div>
+      </div>
+      <div id='cssmenu'>
+        <ul>
+          <li><a href='index.htm'>Resume`</a></li>
+          <li><a href='aboutme.html'>About Me!</a></li>
+          <li><a href='experience.html'>Work Experience</a></li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <br>
+          <h2 class="text-muted">SAP Consulatn Technical Skills</h2>
+          <p class="text-dev text-justify">SAP Basis Consulant</p>
+          <li class="title-p1 text-justify">Work in SAP Implementation, migration and upgrade projects.</li>
+          <li class="title-p1 text-justify">Monitor and Optimize system performance , perform root cause analysis, administer system and provide technical support.</li>
+          <li class="title-p1 text-justify">Experience in working with SAP Applications viz. SAP ERP, SAP CRM, SAP SCM, SAP SRM, SAP Solution Manager, SAP Portal, SAP PI/PO, SAP BW, SAP BO, SAP Net Weaver etc.(Combinations of these )
+Working knowledge of Operating Systems (Windows, UNIX, Linux, Os/400, etc.)</li>
+          <li class="title-p1 text-justify">Perform system activities, changes and problem management in SAP infrastructure.</li>
+          <li class="title-p1 text-justify">Provide regular reports on system performance, system uptime and utilization.</li>
+          <li class="title-p1 text-justify">Perform enhancement and optimization on database or system related process.</li>
+          <li class="title-p1 text-justify">Project planning, execution and completion.</li>
+          <li class="title-p1 text-justify">Service planning and controlling, completion.</li>
+          <li class="title-p1 text-justify">SAP Basis GUI Installation, Adding a system to SAP GUI, Client Administration.</li>
+          <li class="title-p1 text-justify">Installation and technical configuration of the SAP application instances in a Microsoft Windows/SQL environment.</li>
+          <li class="title-p1 text-justify">Management and execution of the SAP transport infrastructure.</li>
+          <li class="title-p1 text-justify">Facilitating communication between SAP support and Cimpress for technology issues and fixes.</li>
+          <li class="title-p1 text-justify">Monitoring the systems to identify failures and performance issues.</li>
+          <li class="title-p1 text-justify">Triaging and resolving issue resolution with close coordination of configuration, development, DBA and server teams.</li>
+          <li class="title-p1 text-justify">Proactively recommending areas for improvement (systems and processes), Maintaining and improving system documentation, Backup support for security administration.</li>
+          <li class="title-p1 text-justify">Business and development process analysis and design.</li>
+          <li class="title-p1 text-justify">Collaborate with external partners in projects.</li>
+          <li class="title-p1 text-justify">SAP User Administration, Job Processing , Transport Management System [TMS], SAP Patch Management, Kernel Management , Monitoring SAP System , RFC (Remote Function Call) in SAP System.</li>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
